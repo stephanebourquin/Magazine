@@ -26,10 +26,8 @@ var mainView = myApp.addView('.view-main', {
     scrollbar: '.swiper-scrollbar',
   })      
 
-$$('.swiper-slide-menu').click(function(e) {
-
-    e.preventDefault();
-    $$(".menu .active").removeClass('active');
-    $$(this).addClass('active');
-    mySwiper.slideTo( $$('#1').index(),100,false );
-});
+function goto (id) {
+alert (id);
+    mySwiper.slideTo( $$('#'+id).index(),500,false );
+	
+}
