@@ -27,7 +27,6 @@ var mainView = myApp.addView('.view-main', {
   })      
 
 function goto (id) {
-alert (id);
     mySwiper.slideTo( $$('#'+id).index(),500,false );
 	
 }
