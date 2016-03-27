@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300);
+.swiper-CONTAINER (height:100% !important;background:white)
+.swiper-slide (overflow:auto)
+.page {font-family:'Source Sans Pro'; font-weight:300;margin:0px}
+#page_index, #list_ebook_id {background :#fff}
+h1 {text-align:center;color:white;font-weight:300;font-size:44px;color:#ccc;text-shadow:1px 1px 1px #333;margin:0;}
+
+.grid {display:table;width:100%;padding:0;margin:0;background-image: url("http://art-zoo.com/scolastik/bg.png");background-size: 80px 250px;background-repeat: repeat;padding-bottom:0px}
+.grid div {height:250px !important;position:relative !important;float:left}
+
+
+.grid h3 {position: absolute !important;
+  bottom: 0px;
+  width: 140px;
+  font-size:14px;
+  text-align: right;
+  max-width: 100%;
+  padding:3px;
+  margin:0px;
+  min-height:60px;
+  opacity:1;
+  background-color:#1A1CB2;
+}
+.grid img {position:absolute;bottom:0;border:3px solid #fff;width:140px !important;height:auto !important;box-shadow:3px -3px 5px #333}
+.grid h3 .cover_title {clear:both;position:relative;right:5px;color:white !important;font-size:14px;font-weight:400;padding:1px;font-style:italic}
+.grid h3 .cover_author {clear:both;color:white !important;padding:2px 5px 0px 5px;}
+.grid h3 span strong {font-size:18px;font-weight:400;padding:0px}
+.grid h3 span i {font-size:14px !important;font-weight:300;padding-right:3px}
+.grid button {position:absolute;bottom:0}
+
+.grid .economie {background:black !important}
+.grid .philosophie {background:green !important}
+
+.toolbar {background:#333}
+.toolbar:before {background:transparent}
+
+#book_info {font-size:11px;color:black;}
+@media screen and (min-width :1824px) {
+.grid div {width:15%}
+}
+
+@media only screen and (min-width :1224px) and (max-width:1824px){
+.grid div {width:20%}
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1223px) {
+.grid div {width:25%}
+}
+
+
+@media only screen and (min-device-width:600px) and (max-width:1024px) {
+.grid div {width:33%}
+}
+
+@media only screen and (min-device-width :480px) and (max-width:599px) {
+.grid div {width:50%}
+}
+
+@media only screen and (min-device-width:320px) and (max-width:479px) {
+.grid {transform: scaleY(0.75);}
+.grid div {width:50%; transform: scaleX(0.75);}
+h1 {position:relative; top:50px}
+
+}
