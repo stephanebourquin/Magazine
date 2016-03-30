@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.magazine_artzoo"
-        version   = "0.0.1">
+        version   = "0.0.2">
 
     <name>Magazine</name>
 
@@ -56,7 +56,7 @@ ONline Magazine
     -->
 
     <!-- Define app icon for each platform. -->
-    <icon src="icon.png" />
+    <icon src="icone.png" />
    
 
     <!-- Define app splash screen for each platform. -->
