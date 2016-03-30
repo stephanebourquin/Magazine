@@ -5,8 +5,8 @@
 #page_index, #list_ebook_id {background :#fff}
 h1 {text-align:center;color:white;font-weight:300;font-size:44px;color:#ccc;text-shadow:1px 1px 1px #333;margin:0;}
 
-.grid {display:table;width:100%;padding:0;margin:0;background-image: url("http://art-zoo.com/scolastik/bg.png");background-size: 80px 250px;background-repeat: repeat;padding-bottom:0px}
-.grid div {height:250px !important;position:relative !important;float:left}
+.grid { display:table;width:100%;padding:0;margin:0;background-image: url("http://art-zoo.com/scolastik/bg.png");background-size: 80px 250px;background-repeat: repeat;padding-bottom:0px}
+.grid div {box-sizing: border-box;height:250px !important;position:relative !important;float:left;}
 
 
 .grid h3 {position: absolute !important;
@@ -17,11 +17,13 @@ h1 {text-align:center;color:white;font-weight:300;font-size:44px;color:#ccc;text
   max-width: 100%;
   padding:3px;
   margin:0px;
-  min-height:60px;
+  min-height:35px;
   opacity:1;
-  background-color:#1A1CB2;
+  background-color:black;
+  opacity:.6;
+  margin-left: 25%;
 }
-.grid img {position:absolute;bottom:0;border:3px solid #fff;width:140px !important;height:auto !important;box-shadow:3px -3px 5px #333}
+.grid img {margin-left: 25%;position:absolute;bottom:0;width:140px !important;height:auto !important;box-shadow:3px -3px 5px #333}
 .grid h3 .cover_title {clear:both;position:relative;right:5px;color:white !important;font-size:14px;font-weight:400;padding:1px;font-style:italic}
 .grid h3 .cover_author {clear:both;color:white !important;padding:2px 5px 0px 5px;}
 .grid h3 span strong {font-size:18px;font-weight:400;padding:0px}
