@@ -27,7 +27,8 @@ function swipe_init () {
 							
 							// And if we need scrollbar
 							scrollbar: '.swiper-scrollbar',
-						  })      
+						  })
+						fitText( $$(".cover h1"), 1 );
 						}
 function goto (id) {
     mySwiper.slideTo( $$('#'+id).index(),500,false );
