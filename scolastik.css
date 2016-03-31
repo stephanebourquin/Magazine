@@ -3,7 +3,7 @@
 .swiper-slide (overflow:auto)
 .page {font-family:'Source Sans Pro'; font-weight:300;margin:0px}
 #page_index, #list_ebook_id {background :#fff}
-h1 {text-align:center;color:white;font-weight:300;font-size:44px;color:#ccc;text-shadow:1px 1px 1px #333;margin:0;}
+
 
 .grid { display:table;width:100%;padding:0;margin:0;background-image: url("http://art-zoo.com/scolastik/bg.png");background-size: 80px 250px;background-repeat: repeat;padding-bottom:0px}
 .grid div {box-sizing: border-box;height:250px !important;position:relative !important;float:left;}
@@ -62,6 +62,5 @@ h1 {text-align:center;color:white;font-weight:300;font-size:44px;color:#ccc;text
 @media only screen and (min-device-width:320px) and (max-width:479px) {
 .grid {transform: scaleY(0.75);}
 .grid div {width:50%; transform: scaleX(0.75);}
-h1 {position:relative; top:50px}
 
 }
