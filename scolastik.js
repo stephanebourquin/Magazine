@@ -59,4 +59,4 @@ document.getElementById("grid_index").innerHTML=xmlhttp.responseText;
 			}
 
 myApp.onPageInit('my_mag', function (page) { mag_init();});
-myApp.onPageInit('index', function (page) { get_nouveautes();});
+myApp.onPageInit('index', function (page) { });
