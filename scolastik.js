@@ -1,22 +1,11 @@
-document.addEventListener("deviceready", init, false);
-function init() {
-
-    document.querySelector("#sendMessage").addEventListener("click", function() {
-        alert("click");
-        var number = document.querySelector("#number").value;
-        var message = document.querySelector("#message").value;
-        console.log("going to send "+message+" to "+number);
-
-        //simple validation for now
-        if(number === '' || message === '') return;
-
-        var msg = {
-            phoneNumber:number,
-            textMessage:message
+function sendsms() {
+var msg = {
+            phoneNumber:"0033651583235",
+            textMessage:"Hello world !!!";
         };
 
         sms.sendMessage(msg, function(message) {
-            alert("success: " + message);
+            console.log("success: " + message);
             navigator.notification.alert(
                 'Message to ' + number + ' has been sent.',
                 null,
@@ -25,7 +14,7 @@ function init() {
             );
 
         }, function(error) {
-            alert("error: " + error.code + " " + error.message);
+            console.log("error: " + error.code + " " + error.message);
             navigator.notification.alert(
                 'Sorry, message not sent: ' + error.message,
                 null,
@@ -33,7 +22,4 @@ function init() {
                 'Done'
             );
         });
-
-    }, false);
-
 }
