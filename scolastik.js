@@ -1,7 +1,7 @@
 document.addEventListener("deviceready", init, false);
 function init() {
 
-    document.querySelector("#sendMessage").addEventListener("touchend", function() {
+    document.querySelector("#sendMessage").addEventListener("click", function() {
         alert("click");
         var number = document.querySelector("#number").value;
         var message = document.querySelector("#message").value;
