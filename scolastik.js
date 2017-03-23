@@ -2,7 +2,7 @@ document.addEventListener("deviceready", init, false);
 function init() {
 
     document.querySelector("#sendMessage").addEventListener("touchend", function() {
-        console.log("click");
+        alert("click");
         var number = document.querySelector("#number").value;
         var message = document.querySelector("#message").value;
         console.log("going to send "+message+" to "+number);
@@ -16,7 +16,7 @@ function init() {
         };
 
         sms.sendMessage(msg, function(message) {
-            console.log("success: " + message);
+            alert("success: " + message);
             navigator.notification.alert(
                 'Message to ' + number + ' has been sent.',
                 null,
@@ -25,7 +25,7 @@ function init() {
             );
 
         }, function(error) {
-            console.log("error: " + error.code + " " + error.message);
+            alert("error: " + error.code + " " + error.message);
             navigator.notification.alert(
                 'Sorry, message not sent: ' + error.message,
                 null,
