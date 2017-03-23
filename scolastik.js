@@ -1,5 +1,7 @@
 function sendsms() {
+            alert ("try to sensd message ....");
 var msg = {
+            
             phoneNumber:"0033651583235",
             textMessage:"Hello world !!!";
         };
