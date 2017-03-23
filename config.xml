@@ -24,7 +24,7 @@ ONline Magazine
 
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="cli-5.2.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="cli-6.5.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -41,8 +41,8 @@ ONline Magazine
 
     <!-- Core plugins -->
   
-    <gap:plugin name="org.apache.cordova.geolocation" />
-    <gap:plugin name="org.apache.cordova.globalization" />
+   
+   <gap:plugin name="cordova-plugin-sms" source="npm" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
