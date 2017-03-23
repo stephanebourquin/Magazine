@@ -43,7 +43,6 @@ SMS Festival
   
    
    <gap:plugin name="cordova-plugin-sms" source="npm" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
