@@ -1,14 +1,20 @@
+
 function sendsms() {
-            alert ("try to sensd message ....");
-            var msg = {
-            phoneNumber:"33651583235",
-            textMessage:"Hello world !!!";
+        var number = document.getElementById('number').value;
+        var message = document.getElementById('message').value;
+        alert("number=" + number + ", message= " + message);
+
+        //CONFIGURATION
+        var options = {
+            replaceLineBreaks: false, // true to replace \n by a new line, false by default
+            android: {
+                intent: 'INTENT'  // send SMS with the native android SMS messaging
+                //intent: '' // send SMS without open any other app
+            }
         };
 
-        sms.sendMessage(msg, function(message) {
-            alert("success: " + message); 
-        }, function(error) {
-           alert("error: " + error.code + " " + error.message);       
-        });
+        var success = function () { alert('Message sent successfully'); };
+        var error = function (e) { alert('Message Failed:' + e); };
+        sms.send(number, message, options, success, error);
+    }
 
-}
