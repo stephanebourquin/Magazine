@@ -4,12 +4,12 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.magazine_artzoo"
-        version   = "0.0.5">
+        version   = "1.0.0">
 
-    <name>Magazine</name>
+    <name>MFestival</name>
 
     <description>
-ONline Magazine
+SMS Festival
     </description>
 
     <author href="http://phonegap.com" email="fulgence.ridal@art-zoo.com">
